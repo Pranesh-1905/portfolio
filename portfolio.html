@@ -1,0 +1,633 @@
+.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranesh J S - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-switch">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home">PJS</a>
+            </div>
+            
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#coding-profiles" class="nav-link">Coding Profiles</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#coursework" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="theme-switch">
+                    <i class="fas fa-sun"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-moon"></i>
+                </div>
+                
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Pranesh J S">Pranesh J S</h1>
+            <p class="typewriter">AI & Data Science Enthusiast</p>
+            <p class="hero-description">
+                2nd year Student at Sri Krishna College of Engineering and Technology, specializing in Artificial Intelligence and Data Science. Passionate about Data Structures and Algorithms with proficiency in Java, C++, Python, and web technologies (HTML, CSS, JavaScript,Reactjs,React Native). Active problem solver with 190+ solutions on LeetCode.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/Pranesh-1905" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/pranesh-j-s-136495292/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:pranesh190504@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+        </div>
+    </section>
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Kids Club Metric Higher Secondary School</h3>
+                    <span class="timeline-date">
+                        <i class="fas fa-calendar-alt"></i> 2014 - 2023
+                    </span>
+                    <div class="grades">
+                        <div class="grade-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>HSC: 93.66%</span>
+                        </div>
+                        <div class="grade-item">
+                            <i class="fas fa-award"></i>
+                            <span>11th: 90.83%</span>
+                        </div>
+                        <div class="grade-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>SSLC: Pass (COVID)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- College -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Sri Krishna College Of Engineering and Technology</h3>
+                    <span class="timeline-date">
+                        <i class="fas fa-calendar-alt"></i> 2023 - 2027
+                    </span>
+                    <p>B.Tech in Artificial Intelligence and Data Science</p>
+                    <div class="grades">
+                        <div class="grade-item">
+                            <i class="fas fa-star"></i>
+                            <span>CGPA: 8.24 (till Semester 2)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- School -->
+        </div>
+    </section>
+    
+    <section id="coding-profiles" class="coding-profiles">
+        <h2 class="section-title">Coding Profiles</h2>
+        <div class="profile-container">
+            <!-- LeetCode Card -->
+            <div class="profile-card leetcode">
+                <div class="card-header">
+                    <i class="fas fa-code" style="color: rgb(21, 26, 26);"></i>
+                    <h3 style="color:black">LeetCode</h3>
+                    <a href="https://leetcode.com/u/pranesh_19/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Problems Solved</span>
+                        <span class="stat-value" id="leetcode-solved">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Success Rate</span>
+                        <span class="stat-value" id="leetcode-rate">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Easy</span>
+                        <span class="stat-value" id="leetcode-easy">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Medium</span>
+                        <span class="stat-value" id="leetcode-medium">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Hard</span>
+                        <span class="stat-value" id="leetcode-hard">Loading...</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- GeeksforGeeks Card -->
+            <div class="profile-card gfg">
+                <div class="card-header">
+                    <i class="fas fa-laptop-code" style="color: rgb(77, 174, 98);"></i>
+                    <h3 style="color: black;">GeeksforGeeks</h3>
+                    <a href="https://www.geeksforgeeks.org/user/pranesh1905/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Problems Solved</span>
+                        <span class="stat-value" id="gfg-solved">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Coding Score</span>
+                        <span class="stat-value" id="gfg-score">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Last Updated</span>
+                        <span class="stat-value" id="gfg-last-updated">Never</span>
+                    </div>
+                </div>
+                <button onclick="updateGFGStatsHandler()" class="update-btn">
+                    Update Stats
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+<!-- ...existing code... -->
+<section id="skills" class="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-container">
+        <!-- Languages -->
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <!-- Developer Tools -->
+        <div class="skill-category">
+            <h3>Developer Tools</h3>
+            <ul>
+                <li>VS Code</li>
+                <li>Eclipse</li>
+                <li>React Native</li>
+                <li>MySQL Workbench</li>
+                <li>REST API</li>
+                <li>Excel</li>
+            </ul>
+        </div>
+        
+        <!-- Technologies/Frameworks -->
+        <div class="skill-category">
+            <h3>Technologies/Frameworks</h3>
+            <ul>
+                <li>React.js</li>
+                <li>Linux</li>
+                <li>GitHub</li>
+                <li>TypeScript</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="experience" class="experience" style="color: black;">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-container">
+        <!-- CodSoft -->
+        <div class="experience-item">
+            <div class="experience-header">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Python Programming Intern</h3>
+                <p class="company">CodSoft</p>
+                <p class="duration"><i class="fas fa-calendar-alt"></i> March 2024 - April 2024</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+            </div>
+            <ul>
+                <li>Developed real-time Python programs</li>
+                <li>Gained hands-on experience with Python libraries</li>
+                <li>Collaborated on real-world challenges</li>
+            </ul>
+        </div>
+
+        <!-- Accenture North America -->
+        <div class="experience-item">
+            <div class="experience-header">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Data Analytics and Visualization</h3>
+                <p class="company">Accenture North America</p>
+                <p class="duration"><i class="fas fa-calendar-alt"></i> May 2024 - June 2024</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+            </div>
+            <ul>
+                <li>Created dashboards and data presentations</li>
+                <li>Developed data analytics skills</li>
+            </ul>
+        </div>
+        
+        <!-- Accenture Nordics -->
+        <div class="experience-item">
+            <div class="experience-header">
+                <i class="fas fa-code-branch"></i>
+                <h3>Developer Job Simulation</h3>
+                <p class="company">Accenture Nordics</p>
+                <p class="duration"><i class="fas fa-calendar-alt"></i> June 2024 - July 2024</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+            </div>
+            <ul>
+                <li>Participated in back-end development tasks and designing scalable solutions</li>
+                <li>Implemented best practices in software development</li>
+                <li>Collaborated on technical problem-solving tasks</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="coursework" class="coursework">
+    <h2 class="section-title">Certification</h2>
+    <ul class="coursework-list">
+        <li>React Web Developer Certification (Infosys Springboard)</li>
+        <li>Python for Data Science, AI & Development (IBM)</li>
+        <li>Introduction to Front-End Development (Meta)</li>
+        <li>Introduction to Back-End Development (Meta)</li>
+        <li>Java Foundation Certification (Infosys Springboard)</li>
+        <li>Artificial Intelligence Foundation Certification (Infosys Springboard)</li>
+        <li>Introduction to MongoDB, AI, and Vector Search (MongoDB)</li>
+        <li>Celonis Foundation Certification (Celonis)</li>
+        <li>Machine Learning Onramp (Mathworks)</li>
+        <li>Deep Learning Onramp (Mathworks)</li>
+        <li>People and Soft Skills Assessment (IBM)</li>
+        <li>Blockchain 101 (Infosys Springboard)</li>
+        <li>Data Analytics and Visualization (Accenture)</li>
+        <li>Database and SQL (Infosys Springboard)</li>
+        <li>Digital 101 (Future Skills)</li>
+        <li>C++ Fundamentals (Infosys Springboard)</li>
+    </ul>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        <!-- Problem Solving Tracker -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Problem-Solving Progress Tracker</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                </div>
+                <ul>
+                    <li>Developed a React-based platform for tracking problem-solving progress</li>
+                    <li>Implemented interactive dashboards using JavaScript</li>
+                    <li>Incorporated dynamic components for real-time updates</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <!-- Banking System -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Banking System with SQL Integration</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">Java Spring</span>
+                    <span class="tech-badge">Java</span>
+                    <span class="tech-badge">SQL</span>
+                    <span class="tech-badge">Eclipse</span>
+                </div>
+                <ul>
+                    <li>Built a robust banking application using Java and SQL</li>
+                    <li>Implemented account management and transactions</li>
+                    <li>Utilized OOP and secure database operations</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <!-- MediCare Application -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>SKCET MediCare Application - MediCamp</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">MySQL</span>
+                </div>
+                <ul>
+                    <li>Developed healthcare management app with multi-user roles</li>
+                    <li>Implemented appointment booking and e-prescriptions</li>
+                    <li>Added secure patient data management</li>
+                    <li>Integrated billing and ambulance tracking</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <!-- Certifications Section --
+
+<!-- Relevant Coursework Section -->
+
+<section id="achievements" class="achievements">
+    <h2 class="section-title">Achievements & Participations</h2>
+    
+    <!-- Hackathons -->
+    <div class="achievement-category">
+        <h3><i class="fas fa-trophy"></i> Hackathons</h3>
+        <div class="achievement-grid">
+            <div class="achievement-card winner">
+                <div class="achievement-content">
+                    <h4>SKCET MediCare - AI Integrated Smart Hospital Management System</h4>
+                    <p class="achievement-place">Bannari Amman Institute of Technology</p>
+                    <p class="achievement-details">
+                        <strong>Prize:</strong> 1st Prize - ₹10,000
+                    </p>
+                    <div class="achievement-badge">
+                        <strong>Highlights:</strong>
+                        <ul>
+                            <li>Streamlined patient care with appointment scheduling, e-prescriptions, and real-time ambulance tracking.</li>
+                            <li>Enhanced hospital efficiency with AI-driven medical recommendations and multi-location management.</li>
+                            <li>Integrated telemedicine and secure payment systems for accessible healthcare solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="achievement-tech">
+                        <strong>Technology Stack:</strong>
+                        <ul>
+                            <li><strong>Frontend:</strong> React JS, React Native</li>
+                            <li><strong>Backend:</strong> Python (v3.12.5), PHP (v8.2.12)</li>
+                            <li><strong>Database:</strong> MySQL, Apache Server</li>
+                            <li><strong>Security:</strong> Data encryption, authentication protocols</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h4>Natural Disaster Alert System using AI</h4>
+                    <p class="achievement-place">Sanjay Ghodawat University, Kolhapur, Maharashtra</p>
+                    <div class="achievement-details">
+                        <p>
+                            Our team participated in a national-level hackathon and developed a 
+                            <strong>Natural Disaster Alert System</strong> application within 48 hours. The project aimed to provide predictive analysis and real-time alerts to help save lives during natural disasters.
+                        </p>
+                    </div>
+                    <div class="achievement-highlights">
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>Integrated 🌦️ <strong>Weather</strong> and 🗺️ <strong>Map APIs</strong> for real-time data visualization.</li>
+                            <li>Implemented a 🤖 <strong>LSTM Deep Learning Model</strong> for predictive analysis of natural disasters.</li>
+                            <li>Developed using 🚀 <strong>React Native</strong> (Frontend) and 🔗 <strong>Flask</strong> (Backend).</li>
+                        </ul>
+                    </div>
+                    <div class="achievement-impact">
+                        <strong>Impact:</strong>
+                        <p>
+                            Overcame challenges of integrating APIs and building a predictive model within a tight timeframe. The solution aims to enhance disaster preparedness and response, potentially saving lives and minimizing damage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h4>GSM-based Band for Women Safety - "Suraksha"</h4>
+                    <p class="achievement-place">Rathinam Technical Campus, Coimbatore</p>
+                    <div class="achievement-details">
+                        <p>
+                             Proud to have participated in <strong>INNOVATE-ATHON</strong> at Rathinam College of Arts and Science, showcasing exceptional creativity and problem-solving skills. Our project, <strong>\"Suraksha\"</strong>, earned recognition for addressing societal challenges and fostering innovation.
+                        </p>
+                    </div>
+                    <div class="achievement-highlights">
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>Developed a wearable <strong>GSM-based band</strong> to ensure women's safety in emergency situations.</li>
+                            <li>Equipped with location tracking, SOS alerts, and instant communication capabilities.</li>
+                            <li>Designed for easy usability, enabling users to trigger alerts discreetly and effectively.</li>
+                        </ul>
+                    </div>
+                    <div class="achievement-impact">
+                        <strong>Impact:</strong>
+                        <p>
+                            Aimed to empower women by leveraging technology for safer communities. The project highlights the potential of innovation to tackle real-world challenges and create a meaningful impact.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Paper Presentations -->
+    <div class="achievement-category">
+        <h3><i class="fas fa-file-alt"></i> Paper Presentations</h3>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h4>AI System for Crop Protection</h4>
+                    <p class="achievement-place">Bannari Amman Institute of Technology</p>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h4>AI System for Tourists Safety</h4>
+                    <p class="achievement-place">Sri Krishna College of Engineering and Technology</p>
+                </div>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h4>AI Medical Assistant</h4>
+                    <p class="achievement-place">Karpagam Institute of Technology</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Competitions & Leadership -->
+    <div class="achievement-category">
+        <h3><i class="fas fa-star"></i> Competitions & Leadership</h3>
+        <div class="achievement-grid">
+            <!-- UI/UX Design Competition -->
+            <div class="achievement-card winner">
+                <div class="achievement-content">
+                    <h4>UI/UX Design Competition</h4>
+                    <p class="achievement-place">Sri Krishna College of Engineering and Technology</p>
+                    <div class="achievement-badge">🏆 2nd Prize</div>
+                    <ul>
+                        <li>Secured 2nd place in a 90-minute competition.</li>
+                        <li>Successfully replicated a polished, user-friendly frontend design under pressure.</li>
+                        <li>Demonstrated expertise in UI/UX design and an eye for seamless user experiences.</li>
+                        <li>Showcased the ability to work effectively in high-stakes scenarios.</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Ideafest'24 Organizer -->
+            <div class="achievement-card">
+                <div class="achievement-content">
+                    <h4>Ideafest'24 Organizer</h4>
+                    <p class="achievement-place">Event Coordinator, SKCET</p>
+                    <ul>
+                        <li>Conceptualized and executed Ideafest'24, fostering student innovation and creativity.</li>
+                        <li>Coordinated workshops, panel discussions, and interactive sessions to inspire entrepreneurial thinking.</li>
+                        <li>Built strategic partnerships with faculty, experts, and seniors to enhance the event's quality and impact.</li>
+                        <li>Leveraged social media and marketing strategies, achieving significant participation growth.</li>
+                        <li>Managed a multidisciplinary team, ensuring a seamless and engaging event experience.</li>
+                        <li>Received overwhelmingly positive feedback from attendees, faculty, and sponsors.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+    <!-- Leadership Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-envelope bounce"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:pranesh190504@gmail.com">pranesh190504@gmail.com</a>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone bounce"></i>
+                    <h3>Phone</h3>
+                    <a href="tel:+918946075793">+91 8946075793</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/pranesh-j-s-136495292/" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Pranesh-1905" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/u/pranesh_19/" target="_blank" class="social-btn">
+                        <i class="fas fa-code"></i>
+                        <span>LeetCode</span>
+                    </a>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Pranesh J S</h3>
+                <p>Aspiring AI & Data Science Engineer</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/pranesh-j-s-136495292/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Pranesh-1905"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/u/pranesh_19/"><i class="fas fa-code"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pranesh J S. All rights reserved.</p>
+        </div>
+        <button id="back-to-top" title="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+</main>
+
+<button id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+    <!-- Scripts -->
+    <script src="theme.js"></script>
+    <script src="nav.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="coding-stats.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="portfolio.js"></script>
+
+<script>
+   emailjs.init("YOUR_PUBLIC_KEY"); // Initialize with your EmailJS public key
+</script>
+
+</body>
+</html>
