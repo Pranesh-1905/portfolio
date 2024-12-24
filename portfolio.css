@@ -1587,3 +1587,6 @@
       justify-content: center;
   }
 }
+.nav-link {
+    color: white;
+}
