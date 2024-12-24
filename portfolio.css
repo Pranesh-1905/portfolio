@@ -1590,3 +1590,7 @@
 .nav-link {
     color: white;
 }
+.coursework-list a {
+  color: white;
+  text-decoration: none;
+}
