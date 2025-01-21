@@ -26,8 +26,39 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Remove or comment out .theme-switch styles */
+/* Remove light theme styles */
+
+body {
+    background: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+header {
+    background: rgba(18, 18, 18, 0.95);
+}
+
+.project-card, .skill-category, .achievement-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+/* ...existing code... */
+
+/* Remove or comment out light theme styles */
+/* body.light-theme {...} */
+
+/* Keep only dark theme styles */
+.nav-links a {
+    color: var(--text-primary);
+}
+
+.project-card {
+    background: #2d3238;
+}
+
 /* Theme Toggle */
-.theme-switch {
+/* .theme-switch {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -78,7 +109,7 @@ body {
 
 .slider.round:before {
   border-radius: 50%;
-}
+} */
 
 /* Header & Navigation */
 header {
@@ -293,11 +324,11 @@ nav {
   width: 100%;
 }
 
-.theme-switch {
+/* .theme-switch {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
+} */
 
 .burger {
   display: none;
@@ -639,7 +670,7 @@ body.dark-theme .project-card {
 }
 
 /* Light Theme */
-body.light-theme {
+/* body.light-theme {
   background: var(--light-bg);
   color: var(--text-dark);
 }
@@ -654,7 +685,7 @@ body.light-theme .nav-links a {
 
 body.light-theme .project-card {
   background: white;
-}
+} */
 
 /* Animations */
 @keyframes fadeIn {
