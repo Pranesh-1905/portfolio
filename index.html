@@ -1,9 +1,8 @@
-.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Pranesh J S - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="portfolio.css">
@@ -12,14 +11,14 @@
 
 <body>
     <!-- Theme Toggle -->
-    <div class="theme-switch">
+    <!-- <div class="theme-switch">
         <i class="fas fa-sun"></i>
         <label class="switch">
             <input type="checkbox" id="theme-toggle">
             <span class="slider round"></span>
         </label>
         <i class="fas fa-moon"></i>
-    </div>
+    </div> -->
 
     <!-- Header -->
     <header class="header">
@@ -29,7 +28,7 @@
             </div>
             
             <div class="nav-right" style="color: rgb(237, 238, 240);">
-                <ul class="nav-links" style="color: rgb(44, 92, 134);">
+                <ul class="nav-links" style="color: rgb(128, 186, 237);">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#coding-profiles" class="nav-link">Coding Profiles</a></li>
@@ -41,14 +40,14 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 
-                <div class="theme-switch">
+                <!-- <div class="theme-switch">
                     <i class="fas fa-sun"></i>
                     <label class="switch">
                         <input type="checkbox" id="theme-toggle">
                         <span class="slider round"></span>
                     </label>
                     <i class="fas fa-moon"></i>
-                </div>
+                </div> -->
                 
                 <div class="burger">
                     <div class="line1"></div>
@@ -61,9 +60,9 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="glitch" data-text="Pranesh J S">Pranesh J S</h1>
+            <h1 class="glitch" data-text="Pranesh J S" style="color: azure;">Pranesh J S</h1>
             <p class="typewriter">AI & Data Science Enthusiast</p>
-            <p class="hero-description" style="color: aliceblue;">
+            <p class="hero-description" style="color: azure;">
                 2nd year Student at Sri Krishna College of Engineering and Technology, specializing in Artificial Intelligence and Data Science. Passionate about Data Structures and Algorithms with proficiency in Java, C++, Python, and web technologies (HTML, CSS, JavaScript,Reactjs,React Native). Active problem solver with 190+ solutions on LeetCode.
             </p>
             <div class="social-links">
@@ -645,6 +644,23 @@
 
 <script>
    emailjs.init("YOUR_PUBLIC_KEY"); // Initialize with your EmailJS public key
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.add(`${currentTheme}-theme`);
+
+    themeToggle.checked = currentTheme === 'dark';
+
+    themeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('light-theme');
+      const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+      localStorage.setItem('theme', newTheme);
+    });
+  });
 </script>
 
 </body>
