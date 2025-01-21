@@ -572,45 +572,62 @@ section {
 }
 
 .btn {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  background: var(--primary-color);
-  color: white;
-  text-decoration: none;
-  transition: background 0.3s ease;
+  padding: 0.6rem 1.2rem; /* Reduced padding */
+  border: 1px solid var(--primary-color); /* Thinner border */
+  border-radius: 25px; /* Smaller border radius */
   background: transparent;
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color);
-  padding: 10px 25px;
-  border-radius: 25px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500; /* Slightly reduced font weight */
+  letter-spacing: 0.3px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* Reduced gap */
+  box-shadow: 0 2px 8px rgba(0, 168, 255, 0.2); /* Smaller shadow */
+  text-align: center;
+  min-width: 100px; /* Reduced minimum width */
+  font-size: 0.9rem; /* Smaller font size */
 }
 
 .btn:hover {
-  background: #0056b3;
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  transform: translateY(-2px); /* Smaller lift effect */
+  box-shadow: 0 4px 12px rgba(0, 168, 255, 0.3);
 }
 
 .btn::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 0;
-  height: 100%;
-  background: var(--accent-color);
-  transition: width 0.3s ease;
-  z-index: -1;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
 }
 
 .btn:hover::before {
-  width: 100%;
+  width: 200px; /* Reduced ripple effect size */
+  height: 200px;
 }
 
-.btn:hover {
-  color: var(--text-primary);
+.btn i {
+  font-size: 1em; /* Smaller icon size */
+  transition: transform 0.3s ease;
 }
+
+.btn:hover i {
+  transform: translateX(2px); /* Smaller hover movement */
+}
+
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -1642,4 +1659,56 @@ box-shadow: 0 5px 15px rgba(9,132,227,0.4);
 .coursework-list a {
 color: white;
 text-decoration: none;
+}
+
+/* ...existing code... */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero-content {
+    padding: 0 1rem;
+  }
+  .info-box {
+    padding: 1rem;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .info-card {
+    padding: 1rem;
+  }
+}
+/* ...existing code... */
+/* Fixing mobile responsiveness for Get in Touch section */
+@media screen and (max-width: 768px) {
+  .contact-section {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .contact-box {
+      width: 10%;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #222;
+  }
+
+  .contact-box p {
+      font-size: 14px;
+  }
+
+  .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+
+.social-buttons a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
 }
