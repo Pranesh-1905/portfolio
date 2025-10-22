@@ -97,7 +97,7 @@
                     <div class="grades">
                         <div class="grade-item">
                             <i class="fas fa-star"></i>
-                            <span>CGPA: 8.43 (till Semester 3)</span>
+                            <span>CGPA: 8.50 (till Semester 4)</span>
                         </div>
                     </div>
                 </div>
@@ -162,13 +162,18 @@
                         <span class="stat-value" id="gfg-score">Loading...</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-label">Last Updated</span>
-                        <span class="stat-value" id="gfg-last-updated">Never</span>
+                        <span class="stat-label">Easy</span>
+                        <span class="stat-value" id="gfg-easy">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Medium</span>
+                        <span class="stat-value" id="gfg-medium">Loading...</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Hard</span>
+                        <span class="stat-value" id="gfg-hard">Loading...</span>
                     </div>
                 </div>
-                <button onclick="updateGFGStatsHandler()" class="update-btn">
-                    Update Stats
-                </button>
             </div>
         </div>
     </section>
@@ -226,34 +231,25 @@
 <section id="experience" class="experience" style="color: black;">
     <h2 class="section-title">Experience</h2>
     <div class="experience-container">
-        <!-- CodSoft -->
+        <!-- Velu LLC Internship -->
         <div class="experience-item">
             <div class="experience-header">
-                <i class="fas fa-laptop-code"></i>
-                <h3>Python Programming Intern</h3>
-                <p class="company">CodSoft</p>
-                <p class="duration"><i class="fas fa-calendar-alt"></i> March 2024 - April 2024</p>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                <i class="fas fa-code"></i>
+                <h3>Full Stack Development Intern</h3>
+                <p class="company">Velu LLC</p>
+                <p class="duration"><i class="fas fa-calendar-alt"></i> September 2025 - Present</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Remote (USA)</p>
             </div>
             <ul>
-                <li>Developed real-time Python programs</li>
-                <li>Gained hands-on experience with Python libraries</li>
-                <li>Collaborated on real-world challenges</li>
-            </ul>
-        </div>
-
-        <!-- Accenture North America -->
-        <div class="experience-item">
-            <div class="experience-header">
-                <i class="fas fa-chart-bar"></i>
-                <h3>Data Analytics and Visualization</h3>
-                <p class="company">Accenture North America</p>
-                <p class="duration"><i class="fas fa-calendar-alt"></i> May 2024 - June 2024</p>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
-            </div>
-            <ul>
-                <li>Created dashboards and data presentations</li>
-                <li>Developed data analytics skills</li>
+                <li>Collaborated with a doctor in the USA to develop healthcare management solutions</li>
+                <li>Designed and deployed MedEase - a full-stack appointment booking and management system</li>
+                <li>Built Invoice Generator for automated invoice creation and payment tracking</li>
+                <li>Implemented secure authentication, role-based access control, and encrypted data storage following HIPAA protocols</li>
+                <li>Ensured HIPAA compliance for handling Protected Health Information (PHI) in healthcare applications</li>
+                <li>Developed responsive React frontends with Vite for optimal performance</li>
+                <li>Created RESTful APIs and integrated real-time features with calendar synchronization</li>
+                <li>Deployed applications on Vercel with CSV import/export and audit logging capabilities</li>
+                <li>Enhanced user experience through robust error handling and intuitive UI/UX design</li>
             </ul>
         </div>
         
@@ -374,6 +370,50 @@
             </div>
             
         </div>
+        
+        <!-- MedEase - Velu LLC -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>MedEase - Medical Appointment Management System</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Vite</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">HIPAA Compliant</span>
+                    <span class="tech-badge">Vercel</span>
+                </div>
+                <ul>
+                    <li>Full-stack web application for streamlined medical appointment booking and management</li>
+                    <li>Implemented secure authentication, role-based access, and HIPAA-compliant encrypted storage for PHI</li>
+                    <li>Real-time appointment booking with calendar integration and comprehensive doctor dashboard</li>
+                    <li>CSV export/import functionality and audit logging for compliance and data management</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Company:</strong> Velu LLC (USA)</p>
+            </div>
+        </div>
+        
+        <!-- Invoice Generator - Velu LLC -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Invoice Generator - Healthcare Billing System</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Vite</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">HIPAA Compliant</span>
+                    <span class="tech-badge">Vercel</span>
+                </div>
+                <ul>
+                    <li>Full-stack application for automated invoice creation and management for healthcare clinics</li>
+                    <li>Secure authentication, role-based access, and HIPAA-compliant encrypted data storage</li>
+                    <li>Real-time invoice generation with payment tracking and integrated patient management</li>
+                    <li>Comprehensive dashboard with CSV capabilities and audit logging for compliance</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Company:</strong> Velu LLC (USA)</p>
+            </div>
+        </div>
+        
+        <!-- Local Service Provider Finder -->
         <div class="project-card">
             <div class="project-content">
                 <h3> Local Service Provider Finder</h3>
@@ -392,6 +432,26 @@
 
             </div>
             
+        </div>
+
+        <!-- TransCare Support System -->
+        <div class="project-card">
+            <div class="project-content">
+                <h3>TransCare Support System</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Vite</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">FastAPI</span>
+                </div>
+                <ul>
+                    <li>Empowers the transgender community by connecting users with shelter, food, healthcare, and job resources</li>
+                    <li>Secure authentication and role-based dashboards for users and NGOs</li>
+                    <li>NGO dashboard for posting and managing resources, with real-time status tracking</li>
+                    <li>Modern, dark-themed, responsive UI with comprehensive profile management</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Project Type:</strong> Social Impact Platform</p>
+            </div>
         </div>
     </div>
 </section>
@@ -649,27 +709,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="coding-stats.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="portfolio.js"></script>
+    <script src="portolio.js"></script>
 
 <script>
    emailjs.init("YOUR_PUBLIC_KEY"); // Initialize with your EmailJS public key
-</script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    document.body.classList.add(`${currentTheme}-theme`);
-
-    themeToggle.checked = currentTheme === 'dark';
-
-    themeToggle.addEventListener('change', () => {
-      document.body.classList.toggle('dark-theme');
-      document.body.classList.toggle('light-theme');
-      const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-      localStorage.setItem('theme', newTheme);
-    });
-  });
 </script>
 
 </body>

@@ -34,12 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Typing animation
-    const typed = new Typed('.typing-text', {
-        strings: ['AI & Data Science Enthusiast', 'Full Stack Developer', 'Problem Solver'],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    const typingElement = document.querySelector('.typing-text');
+    if (typingElement) {
+        const typed = new Typed('.typing-text', {
+            strings: ['AI & Data Science Enthusiast', 'Full Stack Developer', 'Problem Solver'],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    }
 
     // Scroll to top button
     const scrollBtn = document.createElement('button');
