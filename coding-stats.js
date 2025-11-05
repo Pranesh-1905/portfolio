@@ -1,7 +1,7 @@
 // LeetCode Stats
 async function fetchLeetCodeStats() {
     try {
-        const response = await fetch('https://leetcode-stats-api.herokuapp.com/pranesh_19');
+        const response = await fetch('https://leetcode-stats-api.herokuapp.com/pranesh1905');
         const data = await response.json();
         updateLeetCodeDisplay(data);
     } catch (error) {
